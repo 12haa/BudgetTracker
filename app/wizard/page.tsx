@@ -43,7 +43,7 @@ const WizardPage = async () => {
             </Card>
             <Separator/>
             <Button className="w-full">
-                <Link href="/dashboard">
+                <Link href="/">
                     I&apos;m Done! Take Me To Dashboard
                 </Link>
             </Button>

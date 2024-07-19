@@ -27,7 +27,7 @@ import {useCallback} from "react";
 export default function CurrencyComboBox() {
     const [open, setOpen] = React.useState(false);
     const isDesktop = useMediaQuery("(min-width: 768px)");
-    const [selectdOption, setSelectedOption] = React.useState<Currency | null>(
+    const [selecedOption, setSelectedOption] = React.useState<Currency | null>(
         null
     );
     // ------------------Queries and Mutations --------------------------------
@@ -74,7 +74,7 @@ export default function CurrencyComboBox() {
                 <Popover open={open} onOpenChange={setOpen}>
                     <PopoverTrigger asChild>
                         <Button variant="outline" className="w-full justify-start" disabled={mutation.isPending}>
-                            {selectdOption ? <>{selectdOption.label}</> : <>+ Set Currency</>}
+                            {selecedOption ? <>{selecedOption.label}</> : <>+ Set Currency</>}
                         </Button>
                     </PopoverTrigger>
                     <PopoverContent className="w-[200px] p-0" align="start">
@@ -92,7 +92,7 @@ export default function CurrencyComboBox() {
             <Drawer open={open} onOpenChange={setOpen}>
                 <DrawerTrigger asChild>
                     <Button variant="outline" className="w-full justify-start" disabled={mutation.isPending}>
-                        {selectdOption ? <>{selectdOption.label}</> : <>+ Set Currency</>}
+                        {selecedOption ? <>{selecedOption.label}</> : <>+ Set Currency</>}
                     </Button>
                 </DrawerTrigger>
                 <DrawerContent>

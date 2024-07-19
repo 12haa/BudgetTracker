@@ -106,6 +106,147 @@
                     <title value="Claude 3 Sonnet" />
                   </llm>
                 </llm>
+                <messages>
+                  <list>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="create a hook query using useMediaQuery to detect wether the user is in desktop or mobile" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Based on the provided codebase context, we can create a hook that uses the `useMediaQuery` hook to detect whether the user is on a desktop or mobile device. Here's an example implementation:&#10;&#10;```typescript&#10;import * as React from &quot;react&quot;;&#10;import { useMediaQuery } from &quot;@/app/hooks/use-media-query&quot;;&#10;&#10;export function useIsDesktop() {&#10;  const isDesktop = useMediaQuery(&quot;(min-width: 768px)&quot;);&#10;  return isDesktop;&#10;}&#10;```&#10;&#10;In this example, we import the `useMediaQuery` hook from the provided file `app/hooks/use-media-query.ts`. We then create a new hook called `useIsDesktop` that uses `useMediaQuery` with the media query string `&quot;(min-width: 768px)&quot;`. This media query checks if the viewport width is greater than or equal to 768 pixels, which is a common breakpoint for distinguishing between desktop and mobile devices.&#10;&#10;The `useIsDesktop` hook returns a boolean value indicating whether the user is on a desktop device or not. You can use this hook in your components like this:&#10;&#10;```jsx&#10;import { useIsDesktop } from &quot;./use-is-desktop&quot;;&#10;&#10;function MyComponent() {&#10;  const isDesktop = useIsDesktop();&#10;&#10;  return (&#10;    &lt;div&gt;&#10;      {isDesktop ? (&#10;        &lt;DesktopView /&gt;&#10;      ) : (&#10;        &lt;MobileView /&gt;&#10;      )}&#10;    &lt;/div&gt;&#10;  );&#10;}&#10;```&#10;&#10;In this example, the `MyComponent` uses the `useIsDesktop` hook to determine whether to render the `DesktopView` or `MobileView` component based on the user's device.&#10;&#10;Note that the `useMediaQuery` hook provided in the codebase context uses the `matchMedia` API and listens to the `change` event to update the state when the media query matches or doesn't match. This ensures that the hook will update correctly when the user resizes the window or changes the device orientation." />
+                    </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="create a Custom hook  using useMediaQuery to detect wether the user is in desktop or mobil" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Based on the provided codebase context, we can create a custom hook that uses the `useMediaQuery` hook to detect whether the user is on a desktop or mobile device. Here's an example implementation:&#10;&#10;```typescript&#10;import * as React from &quot;react&quot;;&#10;import { useMediaQuery } from &quot;./use-media-query&quot;;&#10;&#10;export function useIsDesktop() {&#10;  const isDesktop = useMediaQuery(&quot;(min-width: 768px)&quot;);&#10;  return isDesktop;&#10;}&#10;```&#10;&#10;In this example, we import the `useMediaQuery` hook from the provided file `app/hooks/use-media-query.ts`. We then create a new hook called `useIsDesktop` that uses `useMediaQuery` with the media query string `&quot;(min-width: 768px)&quot;`. This media query checks if the viewport width is greater than or equal to 768 pixels, which is a common breakpoint for distinguishing between desktop and mobile devices.&#10;&#10;The `useIsDesktop` hook returns a boolean value indicating whether the user is on a desktop device or not. You can use this hook in your components like this:&#10;&#10;```jsx&#10;import { useIsDesktop } from &quot;./use-is-desktop&quot;;&#10;&#10;function MyComponent() {&#10;  const isDesktop = useIsDesktop();&#10;&#10;  return (&#10;    &lt;div&gt;&#10;      {isDesktop ? (&#10;        &lt;DesktopView /&gt;&#10;      ) : (&#10;        &lt;MobileView /&gt;&#10;      )}&#10;    &lt;/div&gt;&#10;  );&#10;}&#10;```&#10;&#10;In this example, the `MyComponent` uses the `useIsDesktop` hook to determine whether to render the `DesktopView` or `MobileView` component based on the user's device.&#10;&#10;Note that the `useMediaQuery` hook provided in the codebase context uses the `matchMedia` API and listens to the `change` event to update the state when the media query matches or doesn't match. This ensures that the hook will update correctly when the user resizes the window or changes the device orientation." />
+                    </message>
+                  </list>
+                </messages>
+                <updatedAt value="2024-07-15T10:19:56.6748664" />
+              </chat>
+              <chat>
+                <internalId value="6ae7fb5a-c7f7-4422-bedf-c7493858cc18" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="660ff6b6-7d22-490e-ab8c-b06d9998ae22" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="7236175e-6855-4d86-8779-62a8dc13dd7d" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="b4714d41-bd70-4364-a887-4b9f2f209402" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="33a3bde8-ac5c-4351-9b4f-46764d519861" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="4c7c0344-185f-44be-b63c-f5815ac63e5f" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="d790bc69-d174-42d7-ae0a-0ffc05ffaf0e" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="5857ce8b-9ea8-464f-a2e3-78cb02484bad" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="184fbaba-8470-40e2-af48-92a21bb6327a" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="fe1792ab-e68f-44d4-af6c-b3a508000bb6" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="4fbf767d-8417-4ec1-b398-65ae0c6d2b01" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="db0d4194-c716-4a42-a5ab-68106e59a3df" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
               </chat>
             </list>
           </chats>
